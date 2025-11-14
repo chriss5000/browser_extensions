@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "Favoriten Startseite f\u00fcr Edge (Dark Mode Top-Bar)",
+    "version": "1.8",
+    "description": "Zeigt Favoriten als neue Tab-Seite in Microsoft Edge an, mit Dark Mode f\u00fcr Kopfzeile, Favicons und Optionen.",
+    "permissions": [
+        "bookmarks"
+    ],
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}

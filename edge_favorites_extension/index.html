@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Favoriten</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class='top-bar'>
+    <div class='search-container'>
+        <input type='text' id='search' placeholder='Find in favorites...'>
+    </div>
+    <div class='buttons'>
+        <button id='darkModeBtn'>Dark Mode</button>
+        <button id='optionsBtn'>Options</button>
+    </div>
+</div>
+<div id='options-panel' class='options-panel'>
+    <h3>Customize colors</h3>
+    <label>Background: <input type='color' id='bgColor' value='#0078d7'></label>
+    <label>Text: <input type='color' id='textColor' value='#ffffff'></label>
+    <button id='applyColorsBtn'>Save</button>
+    <button id='closeOptionsBtn'>Close</button>
+</div>
+<div class='grid-container' id='favorites'></div>
+<script src="script.js"></script>
+</body>
+</html>
