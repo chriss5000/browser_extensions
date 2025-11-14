@@ -1,7 +1,9 @@
 
-// Dark Mode Toggle
+// Dark Mode Toggle mit Speicherung
 document.getElementById('darkModeBtn').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    localStorage.setItem('darkMode', isDarkMode);
 });
 
 // Options Panel Toggle
@@ -30,6 +32,12 @@ window.addEventListener('keydown', function(e) {
         document.getElementById('search').focus();
     }
 });
+
+// Dark Mode beim Laden wiederherstellen
+const savedDarkMode = localStorage.getItem('darkMode');
+if (savedDarkMode === 'true') {
+    document.body.classList.add('dark-mode');
+}
 
 // Favoriten dynamisch laden
 chrome.bookmarks.getTree(function(bookmarkTreeNodes) {
