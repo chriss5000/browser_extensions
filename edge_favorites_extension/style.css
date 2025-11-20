@@ -1,3 +1,7 @@
+/* ===================================
+   Base Styles
+   =================================== */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +9,10 @@ body {
     background: #f4f4f4;
     color: #333;
 }
+
+/* ===================================
+   Top Navigation Bar
+   =================================== */
 
 .top-bar {
     display: flex;
@@ -35,6 +43,10 @@ body {
     color: white;
 }
 
+/* ===================================
+   Dark Mode Theme
+   =================================== */
+
 .dark-mode {
     background: #121212;
     color: #f4f4f4;
@@ -45,12 +57,20 @@ body {
     color: #f4f4f4;
 }
 
+/* ===================================
+   Grid Layout
+   =================================== */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     padding: 20px;
 }
+
+/* ===================================
+   Category Cards
+   =================================== */
 
 .category {
     background: #fff;
@@ -67,6 +87,10 @@ body {
     padding-bottom: 0.5rem;
     font-size: 1.2rem;
 }
+
+/* ===================================
+   Bookmark Links
+   =================================== */
 
 .links {
     display: grid;
@@ -99,6 +123,10 @@ body {
 .links button:hover {
     opacity: 0.9;
 }
+
+/* ===================================
+   Options Panel
+   =================================== */
 
 .options-panel {
     display: none;

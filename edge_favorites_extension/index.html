@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Top navigation bar with search and action buttons -->
 <div class='top-bar'>
     <div class='search-container'>
         <input type='text' id='search' placeholder='Find in favorites...'>
@@ -17,6 +18,8 @@
         <button id='optionsBtn'>Options</button>
     </div>
 </div>
+
+<!-- Color customization panel (hidden by default) -->
 <div id='options-panel' class='options-panel'>
     <h3>Customize colors</h3>
     <label>Background: <input type='color' id='bgColor' value='#0078d7'></label>
@@ -24,7 +27,10 @@
     <button id='applyColorsBtn'>Save</button>
     <button id='closeOptionsBtn'>Close</button>
 </div>
+
+<!-- Main container for bookmarks grid -->
 <div class='grid-container' id='favorites'></div>
+
 <script src="script.js"></script>
 </body>
 </html>
